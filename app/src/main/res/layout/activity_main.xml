@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    android:background="@color/teal_700">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/hint"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionSearch"
+
+    />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/srchbtn"
+                android:layout_weight="1"
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speech"
+                android:id="@+id/ttsbtn"
+                android:layout_weight="1"
+                />
+
+
+        </TableRow>
+    </TableLayout>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listV"
+
+
+
+    />
+</LinearLayout>
